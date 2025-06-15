@@ -1,0 +1,18 @@
+diff --git a/src/main/java/com/wei/webapi/model/users.java b/src/main/java/com/wei/webapi/model/users.java
+index 836d317..f487b91 100644
+--- a/src/main/java/com/wei/webapi/model/users.java
++++ b/src/main/java/com/wei/webapi/model/users.java
+@@ -17,8 +17,13 @@ public class users {
+ 		private String name;
+ 		private String email;
+ 		private String username;
++<<<<<<< HEAD
+ 		private String userid;
+ 		private int tree;
++=======
++		private int userid;
++		private String usernamepassword;
++>>>>>>> aa73843 (新增usernamepassword)
+ 		public int getId() {
+ 			return id;
+ 		}
