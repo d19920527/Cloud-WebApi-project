@@ -17,7 +17,8 @@ public class users {
 		private String name;
 		private String email;
 		private String username;
-		private int userid;
+		private String userid;
+		private int tree;
 		public int getId() {
 			return id;
 		}
