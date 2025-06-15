@@ -17,13 +17,6 @@ public class users {
 		private String name;
 		private String email;
 		private String username;
-<<<<<<< HEAD
-		private String userid;
-		private int tree;
-=======
-		private int userid;
-		private String usernamepassword;
->>>>>>> aa73843 (新增usernamepassword)
 		public int getId() {
 			return id;
 		}
