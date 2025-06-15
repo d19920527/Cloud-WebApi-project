@@ -16,6 +16,7 @@ public class users {
 		private String user_uuid;
 		private String name;
 		private String email;
+		private String username;
 		public int getId() {
 			return id;
 		}
