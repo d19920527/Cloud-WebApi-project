@@ -20,8 +20,8 @@ public class SpringDocConfig {
                         .title("2025 API Documentation - 2025電影訂票範例")
                         .description("SpringBoot 3.5 application")
                         .version("v0.0.1")
-                        .license(new License().name("Your License").url("http://springdoc.org"))
-                        .contact(new Contact().name("Ian Liu").email("ianliu@example.com").url("Your Website URl"))
+                        .license(new License().name("Pan Hong Wei").url("http://springdoc.org"))
+                        .contact(new Contact().name(" Hong Wei").email("d3625140@gmail.com").url("Your Website URl"))
                 );
     }
 }

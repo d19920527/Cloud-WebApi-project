@@ -1,5 +1,6 @@
 package com.wei.webapi.model;
 
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +11,7 @@ import jakarta.persistence.Table;
 @Entity
 
 @Table(name="movie")
+
 public class movie {
 
 	@Id

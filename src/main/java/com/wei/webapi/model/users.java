@@ -1,5 +1,6 @@
 package com.wei.webapi.model;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,6 +10,9 @@ import jakarta.persistence.Table;
 @Entity
 
 @Table(name="users")
+
+
+
 public class users {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
