@@ -2,8 +2,13 @@ package com.wei.webapi.model;
 
 
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,8 +26,10 @@ public class tickets {
 	private String user_uuid;
 	private String movie_uuid;
 	private String seat;
-	private Date booked_at;
-	private Integer statuscode;
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
+	private LocalDateTime booked_at;
+	@Column(name = "statuscode")
+	private int statuscode;
 
 	public int getId() {
 		return id;
@@ -56,21 +63,24 @@ public class tickets {
 		this.seat = seat;
 	}
 
-	public Date getBooked_at() {
+	
+
+	public LocalDateTime getBooked_at() {
 		return booked_at;
 	}
 
-	public void setBooked_at(Date booked_at) {
+	public void setBooked_at(LocalDateTime booked_at) {
 		this.booked_at = booked_at;
 	}
 
-	public Integer getStatuscode() {
+	public int getStatuscode() {
 		return statuscode;
 	}
 
-	public void setStatuscode(Integer statuscode) {
+	public void setStatuscode(int statuscode) {
 		this.statuscode = statuscode;
 	}
+
 
 
 

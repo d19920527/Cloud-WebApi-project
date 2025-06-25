@@ -41,7 +41,7 @@ public class TicketsController {
 		return TicketsRepository.findById(id).orElse(null);
 	}
 
-	@PostMapping
+	@PostMapping("/lnsetickets")
 	@Operation(summary = "創建新的一筆訂票", description = "創建新的一筆訂票紀錄")
 	public tickets createTickets(@RequestBody tickets tickets) {
 		return TicketsRepository.save(tickets);
