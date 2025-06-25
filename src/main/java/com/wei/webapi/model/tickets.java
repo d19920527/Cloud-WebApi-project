@@ -1,6 +1,8 @@
 package com.wei.webapi.model;
 
-import java.sql.Date;
+
+
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,7 +22,7 @@ public class tickets {
 	private String movie_uuid;
 	private String seat;
 	private Date booked_at;
-	private int statuscode;
+	private Integer statuscode;
 
 	public int getId() {
 		return id;
@@ -62,12 +64,14 @@ public class tickets {
 		this.booked_at = booked_at;
 	}
 
-	public int getStatuscode() {
+	public Integer getStatuscode() {
 		return statuscode;
 	}
 
-	public void setStatuscode(int statuscode) {
+	public void setStatuscode(Integer statuscode) {
 		this.statuscode = statuscode;
 	}
+
+
 
 }
